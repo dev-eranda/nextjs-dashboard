@@ -1,33 +1,34 @@
-## Next.js Dashboard Application
+# Next.js Dashboard Application
+**Web Application:** [Click here to view the demonstration application](https://nextjs-dashboard-one-orpin-46.vercel.app/)  
+<hr />
 
-A highly optimized and accessible web application built with Next.js, featuring robust authentication, responsive design, and dynamic functionality.
+## Project Backgroud and Overview
+Next.js App Router course! Main features of Next.js by building a full-stack web application.
+<hr />
 
-## Getting Started
+## Technical Details
+Core technologies used: 
 
-1. Clone the repository:
-```sh
-git clone https://github.com/yourusername/your-repository.git
-```
-
-2. Navigate into the project directory:
-```sh
-cd your-repository
-```
-
-3. Install dependencies:
-```sh
-pnpm i
-```
+- **Next.js, React.js, TypeScript, Tailwind CSS, NextAuth.js**
+<hr />
 
 ## Configuration
-Set up environment variables by creating a .env.local file in the root directory and add the following:
+1. Set up environment variables:
 ```sh
-DATABASE_URL=your_postgresql_database_url
-AUTH_SECRET=your_nextauth_secret
+DATABASE_URL = postgresql_database_url
+AUTH_SECRET = nextauth_secret_key
 ```
+## Installation
+1. Clone repository:
+   ```sh
+   git clone https://github.com/dev-eranda/nextjs-dashboard
 
-## Running Locally
-To run the application locally, use the following command:
-```sh
-pnpm dev
-```
+2. Install dependencies:
+   ```sh
+   pnpm i
+
+3. Start development server:
+   ```sh
+   pnpm dev
+
+  - **Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.**
