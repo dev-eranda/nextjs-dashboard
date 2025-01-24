@@ -3,7 +3,7 @@
 <hr />
 
 ## Project Backgroud and Overview
-Next.js App Router course! Main features of Next.js by building a full-stack web application.
+Project is built using Next.js, a robust and modern framework designed to enhance the development of scalable, high-performance web applications. Next.js provides a comprehensive suite of features that allow us to build an optimized and seamless user experience while maintaining developer efficiency. 
 <hr />
 
 ## Technical Details
