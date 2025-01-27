@@ -28,6 +28,8 @@ Core technologies used:
 DATABASE_URL = postgresql_database_url
 AUTH_SECRET = nextauth_secret_key
 ```
+<hr />
+
 ## Installation
 1. Clone repository:
    ```sh
