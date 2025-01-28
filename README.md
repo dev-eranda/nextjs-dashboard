@@ -37,10 +37,10 @@ AUTH_SECRET = nextauth_secret_key
 
 2. Install dependencies:
    ```sh
-   pnpm i
+   npm i
 
 3. Start development server:
    ```sh
-   pnpm dev
+   npm dev
 
   - **Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.**
