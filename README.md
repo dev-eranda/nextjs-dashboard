@@ -2,7 +2,7 @@
 **Web Application:** [Click here to view the demonstration application](https://nextjs-dashboard-one-orpin-46.vercel.app/)  
 <hr />
 
-## Project Backgroud and Overview
+## Project Background and Overview
 Project is built using Next.js, a robust and modern framework designed to enhance the development of scalable, high-performance web applications. Next.js provides a comprehensive suite of features that allow us to build an optimized and seamless user experience while maintaining developer efficiency
 <hr />
 
@@ -19,7 +19,7 @@ The main objectives of this application are to:
 ## Technical Details
 Core technologies used: 
 
-- **ReactJS, Next.js, NextAuth.js, TypeScript, Tailwind CSS**
+- **React, Next.js, NextAuth.js, TypeScript, Tailwind CSS**
 <hr />
 
 ## Configuration
