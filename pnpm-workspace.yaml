@@ -1,0 +1,6 @@
+allowBuilds:
+  "@vercel/speed-insights": true
+  bcrypt: true
+  bufferutil: true
+  sharp: true
+  utf-8-validate: true
