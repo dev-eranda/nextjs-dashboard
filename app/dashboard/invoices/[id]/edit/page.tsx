@@ -3,13 +3,24 @@ import Breadcrumbs from "@/app/ui/invoices/breadcrumbs";
 import { fetchInvoiceById, fetchCustomers } from "@/app/lib/data";
 import { notFound } from "next/navigation";
 import { Metadata } from "next";
+import { Suspense } from "react";
 
 export const metadata: Metadata = {
   title: "Edit Invoice",
 };
 
-export default async function Page({ params }: { params: { id: string } }) {
-  const id = params.id;
+export default function Page({ params }: { params: Promise<{ id: string }> }) {
+  return (
+    <main>
+      <Suspense fallback={<FormSkeleton />}>
+        <EditInvoice params={params} />
+      </Suspense>
+    </main>
+  );
+}
+
+async function EditInvoice({ params }: { params: Promise<{ id: string }> }) {
+  const { id } = await params;
   const [invoice, customers] = await Promise.all([
     fetchInvoiceById(id),
     fetchCustomers(),
@@ -20,7 +31,7 @@ export default async function Page({ params }: { params: { id: string } }) {
   }
 
   return (
-    <main>
+    <>
       <Breadcrumbs
         breadcrumbs={[
           { label: "Invoices", href: "/dashboard/invoices" },
@@ -32,6 +43,10 @@ export default async function Page({ params }: { params: { id: string } }) {
         ]}
       />
       <Form invoice={invoice} customers={customers} />
-    </main>
+    </>
   );
+}
+
+function FormSkeleton() {
+  return <div className="h-96 animate-pulse rounded-md bg-gray-50" />;
 }
