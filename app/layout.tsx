@@ -1,7 +1,5 @@
-// @ts-expect-error TypeScript does not recognize this CSS side-effect import.
 import "@/app/ui/global.css";
 import { inter } from "@/app/ui/fonts";
-import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -20,10 +18,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} antialiased`}>
-        <SpeedInsights />
-        {children}
-      </body>
+      <body className={`${inter.className} antialiased`}>{children}</body>
     </html>
   );
 }

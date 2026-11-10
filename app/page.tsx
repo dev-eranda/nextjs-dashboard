@@ -34,6 +34,7 @@ export default function Page() {
           {/* Add Hero Images Here */}
           <Image
             src="/hero-desktop.png"
+            loading="eager"
             width={1000}
             height={760}
             className="hidden md:block"

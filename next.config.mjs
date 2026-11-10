@@ -1,9 +1,8 @@
 /** @type {import('next').NextConfig} */
 
 const nextConfig = {
-  experimental: {
-    ppr: "incremental",
-  },
+  cacheComponents: true,
+  partialPrefetching: true,
 };
 
 export default nextConfig;
